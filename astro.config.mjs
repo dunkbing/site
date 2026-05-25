@@ -1,5 +1,16 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
+import cloudflare from "@astrojs/cloudflare";
+import sitemap from "@astrojs/sitemap";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  site: "https://db99.dev",
+  output: "server",
+  adapter: cloudflare(),
+  integrations: [sitemap()],
+  vite: {
+    plugins: [tailwindcss()],
+  },
+});

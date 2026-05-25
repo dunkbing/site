@@ -1,0 +1,10 @@
+name = "db99"
+compatibility_date = "2026-05-25"
+compatibility_flags = ["nodejs_compat"]
+
+# Created with: wrangler kv namespace create DB99_KV
+# Then paste the returned id below and a preview_id from `--preview`.
+[[kv_namespaces]]
+binding = "DB99_KV"
+id = "6ef46f5943a64b0cb70a5249a568d675"
+preview_id = "eb9d6f3f122d4ee9981c5fdfcf0d7595"
