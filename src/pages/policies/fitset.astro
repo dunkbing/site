@@ -1,0 +1,138 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="FitSet Privacy Policy">
+  <div class="max-w-2xl mx-auto p-6 text-gray-800">
+    <h1 class="text-3xl font-bold text-blue-600 mb-4">FitSet Privacy Policy</h1>
+    <p class="italic text-gray-500 mb-6">Effective: May 26, 2026</p>
+
+    <p class="mb-6">
+      FitSet is a fitness app that helps you log workouts, track recovery, and
+      get AI feedback on your training. This policy explains what we collect and
+      how we use it.
+    </p>
+
+    <h2 class="text-2xl font-semibold text-green-600 mb-3">
+      What stays on your device
+    </h2>
+    <p class="mb-4">
+      Your workout history, routines, measurements, exercise logs, and profile
+      (goal, experience, equipment) are stored locally on your device using
+      SQLite. We do not have access to this data, and it is not uploaded to our
+      servers.
+    </p>
+
+    <h2 class="text-2xl font-semibold text-green-600 mb-3">
+      What is sent to our servers
+    </h2>
+    <p class="mb-4">
+      When you use an AI feature, the relevant input is sent to our backend,
+      which forwards it to a third-party AI provider for processing.
+      Specifically:
+    </p>
+    <ul class="list-disc list-inside mb-4 space-y-2">
+      <li>
+        <strong>AI Form Check</strong> — the video or frames you record are sent
+        for analysis. The video is processed and discarded; we do not store it.
+      </li>
+      <li>
+        <strong>AI Coach Chat</strong> — your message and a brief context summary
+        (e.g., recent workouts, goal) are sent so the coach can respond. We do not
+        store chat content on our servers.
+      </li>
+      <li>
+        <strong>Routine Generation, Weekly Recap, Exercise Substitution</strong>
+        — the inputs needed to generate a response are sent for processing and not
+        retained.
+      </li>
+    </ul>
+    <p class="mb-4">
+      We do not link this data to your identity, and we do not require an
+      account.
+    </p>
+
+    <h2 class="text-2xl font-semibold text-green-600 mb-3">Third parties</h2>
+    <p class="mb-4">AI processing is performed by:</p>
+    <ul class="list-disc list-inside mb-4 space-y-2">
+      <li>
+        <strong>OpenAI</strong> (
+        <a
+          href="https://openai.com/policies/privacy-policy"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-blue-600 hover:underline">privacy policy</a
+        >)
+      </li>
+      <li>
+        <strong>Google (Gemini)</strong> (
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-blue-600 hover:underline">privacy policy</a
+        >)
+      </li>
+      <li>
+        <strong>Replicate</strong> (
+        <a
+          href="https://replicate.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-blue-600 hover:underline">privacy policy</a
+        >)
+      </li>
+    </ul>
+    <p class="mb-4">
+      These providers process your inputs to generate responses. They do not
+      receive any identifier that links the input to you.
+    </p>
+
+    <h2 class="text-2xl font-semibold text-green-600 mb-3">Diagnostics</h2>
+    <p class="mb-4">
+      If crash reporting is enabled in a build, anonymous diagnostic data may be
+      sent to <strong>Sentry</strong> to help us fix bugs. This data does not include
+      workout content or personal identifiers.
+    </p>
+
+    <h2 class="text-2xl font-semibold text-green-600 mb-3">Permissions</h2>
+    <ul class="list-disc list-inside mb-4 space-y-2">
+      <li>
+        <strong>Camera</strong> — used only when you record a set for Form Check.
+        Footage is sent for analysis when you initiate it, and is not accessed otherwise.
+      </li>
+      <li>
+        <strong>Notifications</strong> — used to remind you about workouts. You can
+        disable them in settings.
+      </li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold text-green-600 mb-3">Children</h2>
+    <p class="mb-4">
+      FitSet is not directed at children under 13 and does not knowingly collect
+      data from them.
+    </p>
+
+    <h2 class="text-2xl font-semibold text-green-600 mb-3">Your choices</h2>
+    <p class="mb-4">
+      Because your data is stored locally, deleting the app deletes your data.
+      There is no account to close.
+    </p>
+
+    <h2 class="text-2xl font-semibold text-green-600 mb-3">Changes</h2>
+    <p class="mb-4">
+      We may update this policy. The effective date above will reflect the
+      latest version.
+    </p>
+
+    <h2 class="text-2xl font-semibold text-green-600 mb-3">Contact</h2>
+    <p class="mb-2">
+      Questions? Email
+      <a
+        href="mailto:getvisiblelondon@gmail.com"
+        class="text-blue-600 hover:underline">getvisiblelondon@gmail.com</a
+      >.
+    </p>
+    <p class="text-gray-500">— FitSet</p>
+  </div>
+</Layout>
